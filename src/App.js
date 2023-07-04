@@ -17,6 +17,22 @@ class App extends Component {
 
     ]
   }
+
+//Hooks - Mounting phase
+constructor() {
+  super();
+  console.log('App - Constructor');
+  // this.state = this.props.something;
+  
+}
+
+componentDidMount(){
+  // this method is called when the component is rendered.
+  // Best method to make AJAX call
+  console.log('App-Mounted')
+  // e.g: this.setState({ movies })
+}
+
   //function to delete counter
   handleDelete = (counterId) => {
     console.log('Delete event handler called..', counterId)
@@ -46,12 +62,12 @@ class App extends Component {
 
   }
   render() {
-
+    console.log("App-rendered")
     return (
       <React.Fragment>
 
         <NavBar totalCounters={this.state.counters.filter(c => c.value > 0).length}  />
-        <main className='container'>
+        <main className='container col-4 p-5'>
           <Counters
             counters={this.state.counters}
             onReset={this.handleReset}

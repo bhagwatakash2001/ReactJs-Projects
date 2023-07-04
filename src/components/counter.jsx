@@ -11,6 +11,18 @@ class Counter extends Component {
     //     // tags: ['tag1', 'tag2', 'tag3']
     // };
 
+    componentDidUpdate(prevProps, prevState){
+        // console.log('prevProps', prevProps)
+        // console.log("prevState",prevState)
+        if(prevProps.counter.value !== this.props.counter.value){
+            //Ajax call to server to get new data
+        }
+    }
+
+    componentWillUnmount(){
+        console.log('Counter - Unmount')
+    }
+
     my_css = {
         fontSize: 30,
         fontWeight: 'bold',
@@ -33,7 +45,7 @@ class Counter extends Component {
     }
 
     getBadgeClasses() {
-        let classes = "badge m-2 p-2 badge-";
+        let classes = "badge m-3 p-2 badge-";
         // return classes += (this.state.value) === 0 ? 'warning' : 'primary';
         return classes += (this.props.counter.value) === 0 ? 'warning' : 'info';
 
