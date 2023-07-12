@@ -1,3 +1,4 @@
-[Image file](https://github.com/bhagwatakash2001/ReactJs-Projects/blob/a37f4eaac33fbfc6328429c346960bb5da291af3/CountersLetsCount/Counters%20(1).png)
-```
+<p align="center">
+  <img  src="https://github.com/bhagwatakash2001/ReactJs-Projects/blob/b84182848ae484d704ff5131d8280fccb5724044/CountersLetsCount/Counters1.png" />
+</p>
 
